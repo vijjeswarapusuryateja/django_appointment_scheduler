@@ -145,7 +145,7 @@ Additionally, you can pass multiple weekdays to the weekly_offs list to mark spe
 curl -X POST http://localhost:8000/api/tutor/1/book-appointment/1/ \
   -H "Content-Type: application/json" \
   -d '{
-        "student_name": "Alice Johnson",
+        "customer_name": "Alice Johnson",
         "booked_by": "Admin"
       }'
 ```

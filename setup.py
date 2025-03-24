@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='django_appointment_scheduler',
-    version='0.1.4',
+    version='0.1.5',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
