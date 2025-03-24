@@ -43,7 +43,7 @@ class GenericAppointment(models.Model):
     object_id = models.PositiveIntegerField()
     entity = GenericForeignKey('content_type', 'object_id')
     slot = models.ForeignKey(GenericAppointmentSlot, on_delete=models.CASCADE)
-    patient_name = models.CharField(max_length=100)
+    customer_name = models.CharField(max_length=100)
     booked_by = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
 
