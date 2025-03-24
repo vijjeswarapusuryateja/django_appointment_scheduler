@@ -118,6 +118,7 @@ print(Tutor.objects.all())
 ## 📝 API Usage
 
 ### Set Availability for a Tutor
+You can pass list into weekly_offs
 ```bash
 curl -X POST http://localhost:8000/api/tutor/1/set-availability/ \
   -H "Content-Type: application/json" \
@@ -129,6 +130,14 @@ curl -X POST http://localhost:8000/api/tutor/1/set-availability/ \
         "slot_duration": 30,
         "weekly_offs": ["Sunday"]
       }'
+```
+You can pass all weekday names as a list into weekly_offs
+```bash
+"weekly_offs": ["Sunday", "Friday"]
+```
+If you use the keyword 'Off', you can set the entire date range off
+```bash
+"weekly_offs": ["Off"]
 ```
 
 ### Book an Appointment
