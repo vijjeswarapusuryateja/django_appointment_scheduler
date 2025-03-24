@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='django_appointment_scheduler',
-    version='0.1.3',
+    version='0.1.4',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -17,7 +17,7 @@ setup(
     description='A generic and flexible appointment scheduling system for Django applications',
     long_description=long_description,
     long_description_content_type="text/markdown",  # Specify the format
-    author='NavaTeja (Parne Naveen Reddy & Vijjeswarapu Surya Teja)',
+    author='Parne Naveen Reddy & Vijjeswarapu Surya Teja',
     author_email='team@navateja.com',
     url='https://github.com/vijjeswarapusuryateja/django_appointment_scheduler',
     classifiers=[

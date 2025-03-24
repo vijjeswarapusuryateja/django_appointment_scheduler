@@ -131,13 +131,13 @@ curl -X POST http://localhost:8000/api/tutor/1/set-availability/ \
         "weekly_offs": ["Sunday"]
       }'
 ```
-You can pass all weekday names as a list into weekly_offs
-```bash
-"weekly_offs": ["Sunday", "Friday"]
-```
-If you use the keyword 'Off', you can set the entire date range off
+You can set the entire date range as Off by using the keyword “Off” in the weekly_offs list. This is useful when you want to mark a period as completely unavailable.
 ```bash
 "weekly_offs": ["Off"]
+```
+Additionally, you can pass multiple weekdays to the weekly_offs list to mark specific days of the week as unavailable.
+```bash
+"weekly_offs": ["Sunday", "Friday"]
 ```
 
 ### Book an Appointment
@@ -154,6 +154,12 @@ curl -X POST http://localhost:8000/api/tutor/1/book-appointment/1/ \
 ```bash
 curl -X DELETE http://localhost:8000/api/tutor/1/cancel-appointment/1/
 ```
+
+---
+
+## 📝 Notes
+For a more detailed and engaging read, check out my Medium article:
+[Introducing the Django Appointment Scheduler - Your Ultimate Solution for Managing Appointments](https://medium.com/@surya.vijjeswarapu/introducing-the-django-appointment-scheduler-your-ultimate-solution-for-managing-appointments-ab2268d6f95c)
 
 ---
 
