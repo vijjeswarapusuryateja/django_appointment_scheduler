@@ -129,7 +129,7 @@ class BookAppointmentView(APIView):
             content_type=content_type,
             object_id=entity_id,
             slot=slot,
-            patient_name=data.get("patient_name"),
+            customer_name=data.get("customer_name"),
             booked_by=data.get("booked_by")
         )
 
